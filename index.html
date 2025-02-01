@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Mart Digital</title>
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/x-icon" href="image/cccb.jpg">
+    
+    <!-- For modern browsers -->
+    <link rel="icon" type="image/png" sizes="32x32" href="image/MMA.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/MMA.png">
+    
+    <!-- For Apple devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="image/MMA.png">
+    
+    <!-- For Android Chrome -->
+    <link rel="manifest" href="site.webmanifest">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        :root {
+            --primary-purple: #5c9ff6;
+            --light-purple: #EDE9FE;
+            --dark-purple: #4690c1;
+            --background: #F3F4F6;
+        }
+
+        body {
+            background-color: var(--background);
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            margin: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+           font-weight: bold;
+           color: var(--primary-purple);
+           font-size: 36px; /* Adjust the size as needed */
+
+
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000000;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-purple);
+    font-weight: bold;
+    border: 2px solid var(--primary-purple);
+    box-shadow: 0 4px 6px rgba(92, 177, 246, 0.2);
+    transform: translateY(-2px);
+    padding-left: 5px;
+    padding-right: 5px;
+            
+            
+            
+        }
+
+        .login-btn {
+            background: rgb(81, 156, 241);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: auto;
+
+        }
+
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(3, 36, 185, 0.3);
+            background: rgb(2, 33, 80);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(222, 215, 233, 0.2) 0%, rgb(8, 140, 180) 100%);
+            padding: 6rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+    font-size: 3rem;
+    color: black;
+    
+    margin-bottom: 0;  /* Remove bottom margin completely */
+    
+}
+
+.special-style {
+    font-size: 4rem;
+    color: black;
+    
+    margin-bottom: 0;  /* Remove bottom margin completely */
+}
+
+        .hero p1 {
+            color: #000000;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        
+
+        .hero p {
+            color: #000000;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .robot-img {
+            width: 300px;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+            
+
+
+
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #1F2937;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            border: 2px solid var(--primary-purple);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(139, 92, 246, 0.2);
+        }
+        .service-card img[src*="Group 43"],
+        .service-card img[src*="Group 43"],
+/* Container for image and heading */
+.service-card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the images */
+.service-card img[src*="Group 43"],
+.service-card img[src*="Group 42"] {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 0 1rem 0;
+    align-self: flex-start; /* Aligns image to the left */
+}
+
+/* Style for the title */
+.service-card h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Style for the description text */
+.service-card p {
+    margin-top: auto; /* Pushes the text to the bottom */
+    width: 100%;
+    clear: both; /* Ensures text starts below the image */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .service-card img[src*="Group 43"],
+    .service-card img[src*="Group 42"] {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+
+
+        
+
+        /* Plans */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 3rem;
+        }
+        
+
+        .price-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            border: 2px solid var(--primary-purple);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            flex: 1;               /* Makes cards equal width */
+  display: flex;         /* Enables vertical layout inside card */
+  flex-direction: column;/* Stacks content vertically */
+  justify-content: space-between;
+        }
+
+        .price-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(139, 92, 246, 0.2);
+        }
+
+        .price {
+            font-size: 2.5rem;
+            color: var(--primary-purple);
+            margin: 1rem 0;
+        }
+        .price-card ul {
+    padding-bottom: 20px;  /* Adjust this value as needed */
+    list-style: none;  /* This removes bullet points if you want */
+    margin: 0;  /* Reset any default margins */
+}
+
+        /* About */
+        .about {
+    background: var(--light-purple);
+    padding: 4rem 2rem;
+    background-image: url('image/rr.svg');
+
+
+        }
+        .about {
+    background: linear-gradient(rgba(237, 233, 254, 0.9), rgba(237, 233, 254, 0.9)),
+                url('image/rr.svg');
+    background-size: 100% 100%;  /* This will stretch the image to fit the section */
+    background-position: left top;  /* This aligns it to the top left */
+    background-repeat: no-repeat;
+    padding: 4rem 2rem;
+    position: relative;
+}
+
+       .section.body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;  /* This adds space between flex items */
+    text-align: justify;
+    margin-left: 10%;  /* Adds margin from the left */
+    margin-right: 10%;
+}
+
+/* Or alternatively, you can add margin to p1 */
+.section.body p1 {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Make sure p2 is also displayed as a block element */
+.section.body p2 {
+    display: block;
+}
+.founder-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: rem;
+    
+    
+    
+}
+
+.founder-text {
+    flex: 1;
+    padding-right: 3rem;
+}
+
+.founder-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.founder-text p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.founder-image {
+    flex: 0 0 200px;
+}
+
+.founder-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+.logo1 {
+    text-align: center;
+    font-size: 50px;  /* Increase font size */
+    font-weight: bold;
+    color: var(--primary-purple);
+    padding: 20px 0;  /* Add some vertical padding */
+    width: 100%;  /* Ensure it takes full width */
+}
+
+
+        /* Contact */
+        .contact {
+            background: var(--light-purple);
+        }
+
+       
+
+         
+           /* Add or update these styles */
+.contact-form {
+    background: rgb(251, 250, 252);
+    border: #6B46C1;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 700px; /* Increased to better fit the iframe */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary-purple); /* Added border */
+    box-shadow: 0 4px 6px rgba(139, 92, 246, 0.2);
+}
+
+.google-form-container {
+    width: 100%;
+    height: 850px; /* Slightly higher than iframe to ensure full visibility */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.google-form-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.contact-info-container {
+    background: rgb(251, 250, 252);
+    border: #6B46C1;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 700px; /* Increased to better fit the iframe */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary-purple); /* Added border */
+    box-shadow: 0 4px 6px rgba(139, 92, 246, 0.2);
+    margin-top: 1rem;
+}
+
+.contact-items {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: #6B46C1;
+    
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-box {
+    background-color: #991de1;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    overflow: hidden; /* This ensures the image stays within the box */
+}
+
+.icon-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire box */
+}
+
+.contact-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-item p {
+    color: #666;
+    line-height: 1.5;
+}
+/* Base styles for all contact items */
+.contact-item {
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* WhatsApp specific hover effect */
+.contact-item.whatsapp-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(162, 37, 211, 0.3);
+    background-color: #f0f8f0;
+    cursor: pointer;
+}
+
+/* Location specific hover effect */
+.contact-item.location-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(167, 53, 202, 0.3);
+    background-color: #f0f4ff;
+}
+
+/* Email specific hover effect */
+.contact-item.email-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(183, 53, 234, 0.3);
+    background-color: #fff0f0;
+    cursor: pointer;
+}
+
+/* Icon box hover animation */
+.contact-item:hover .icon-box {
+    transform: rotate(5deg);
+    transition: transform 0.3s ease;
+}
+
+/* Ensuring smooth transitions */
+.icon-box {
+    transition: transform 0.3s ease;
+}
+
+        /* Footer */
+        .footer {
+    background-color: #17202b;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 1;
+}
+
+.copyright {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .robot-img {
+                margin-top: 2rem;
+                width: 200px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+        /* Base responsive styles */
+/* Base responsive styles */
+@media (max-width: 768px) {
+    /* Navigation */
+    nav {
+        padding: 0.8rem 1rem;
+        margin: 0.5rem;
+        flex-direction: column;
+        gap: 1rem;
+        border-radius: 25px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .logo {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .special-style {
+        font-size: 2.5rem;
+    }
+
+    .hero p1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .robot-img {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    /* Services Section */
+    #services {
+        padding: 2rem 1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .service-card img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 1rem;
+        display: block;
+    }
+
+    /* Pricing Section */
+    #pricing {
+        padding: 2rem 1rem;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .price-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .price {
+        font-size: 2rem;
+    }
+
+    /* About Section */
+    .about {
+        padding: 2rem 1rem;
+    }
+
+    .section.body {
+        margin: 0 1rem;
+        text-align: justify;
+    }
+
+    .founder-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 1rem;
+    }
+
+    .founder-text {
+        padding-right: 0;
+    }
+
+    .founder-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .founder-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo1 {
+        font-size: 36px;
+        padding: 1rem 0;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 2rem 1rem;
+    }
+
+    .contact-form {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .google-form-container {
+        height: 800px;
+        width: 100%;
+    }
+
+    .contact-items {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-item {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Tablet-specific styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .services-grid,
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .special-style {
+        font-size: 3rem;
+    }
+
+    .section.body {
+        margin: 0 2rem;
+    }
+
+    .founder-wrapper {
+        margin: 0 2rem;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .special-style {
+        font-size: 2.2rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .login-btn {
+        padding: 0.4rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-info-container {
+        padding: 1rem;
+    }
+
+    .social-icons {
+        gap: 1rem;
+    }
+
+    .social-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Landscape mode optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: 1rem;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .robot-img {
+        width: 150px;
+    }
+
+    .google-form-container {
+        height: 400px;
+    }
+}
+
+/* High-resolution displays */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .hero-content {
+        max-width: 800px;
+    }
+
+    .robot-img {
+        width: 400px;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MMD</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a 
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfVNvSo2Ufgpj3579VjFaAuiEv2Zt66m2mo_vFqxKQZVeGUyw/viewform?embedded=true"
+        target="_blank" 
+        class="login-btn" 
+        
+       style="text-decoration: none;">Contact Us</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, We are <br><span class="special-style">Max Mart Digital</span></h1>
+            
+            <p1>Digital Marketing for Business</p1>
+            <p>Max Mart AI crafts smart chatbots and innovative digital marketing solutions, empowering businesses with automation and growth-focused strategies.</p>
+            
+            <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfVNvSo2Ufgpj3579VjFaAuiEv2Zt66m2mo_vFqxKQZVeGUyw/viewform?embedded=true" 
+            target="_blank" 
+            class="login-btn" 
+            
+           style="text-decoration: none;">Contact Us</a>
+        </div>
+        <img src="image/bot.png" alt="AI Robot" class="robot-img">
+    </section>
+
+    <section id="services">
+        <div class="section-title">
+            <h2>SERVICES</h2>
+            <p>What We Do</p>
+        </div>
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <img src="image/Group 43.jpg" alt="Marketing Icon">
+                <h3>Digital Marketing</h3>
+                <p>We specialize in crafting tailored digital marketing strategies that drive engagement,
+                    boost brand visibility, and accelerate business growth. By leveraging data-driven insights 
+                    and innovative techniques, we help businesses connect with their target audience across channels
+                     like social media, email marketing, SEO, and paid advertising. From building a strong online 
+                     presence to optimizing campaigns for maximum ROI, we deliver results that make a difference.
+                      Whether your goal is to attract new customers, retain existing ones, or enhance your brand's 
+                      impact, our customized strategies are designed to achieve success.
+                     Let us transform your digital presence into a powerful growth engine!</p>
+            </div>
+            <div class="service-card">
+                <img src="image/Group 42.jpg" alt="Chatbot Icon">
+                <h3>Chatbot Creating</h3>
+                <p>We specialize in creating tailored digital marketing strategies designed to drive engagement, enhance brand visibility, and fuel business growth. By leveraging data-driven insights and innovative techniques, we help businesses connect with their target audience through channels like social media, email marketing, SEO, and paid advertising. From increasing online presence to optimizing campaigns for maximum ROI, we deliver results that matter. Whether you’re looking to build your brand, attract more customers, or retain existing ones, our customized strategies ensure your goals are met efficiently
+                     and effectively. Let’s transform your digital presence into a powerful growth engine!</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="pricing">
+        <div class="section-title">
+            <h2>PLANS</h2>
+            <p1>Our Pricing Plans</p1>
+
+        </div>
+        <div class="section-title">
+            
+            <p>Looking for something unique? If our standard packages don’t fully meet your needs, we can create a <strong>Custom Web Development Package</strong> tailored to your specific requirements!</p>
+            <p>Whether it’s a custom design, advanced functionality, or additional features, our team is here to help bring your vision to life.</p>
+            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfVNvSo2Ufgpj3579VjFaAuiEv2Zt66m2mo_vFqxKQZVeGUyw/viewform?embedded=true" target="_blank" style="text-decoration: none; color: #0000FF; font-weight: bold;">Contact Our Team Today to Get Started!</a></p>
+
+        </div>
+        <!-- Other pricing cards -->
+        <div class="section-title">
+            <h1>Social Media Management & Marketing</h1>
+        </div>
+        <div class="pricing-grid">
+            
+            <div class="price-card">
+                <h3>Basic Plan</h3>
+                <div class="price">$300</div>
+                <p><strong>Per month</strong></p>
+                <ul>
+                    <li>Platforms: 1 platform (TikTok, Pinterest, YouTube, etc.)</li>
+                    <li>Posts: 10 Posts/Month</li>
+                    <li>Content: Infographics and Static Posts</li>
+                    <li>Community Engagement</li>
+                    <li>Reporting: Monthly performance report</li>
+                      
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1kbMUjcKpnNXKoZTOMBMSmRBn_WgBbvY30K7-E_MkfdrQzA/viewform?embedded=true" 
+           target="_blank" 
+           class="login-btn" 
+           style="text-decoration: none;">Start hiring now</a>
+            </div>
+            
+            <div class="price-card">
+                <h3>Standard Plan</h3>
+                <div class="price">$650</div>
+                <p><strong>Per month</strong></p>
+                <ul>
+                    <li>Platforms: 2 platforms (TikTok, Pinterest, YouTube, etc.)</li>
+                    <li>Posts: 15-20 Posts/Month</li>
+                    <li>Content: Videos, Infographics, and Carousel Posts</li>
+                    <li>Community Engagement</li>
+                    <li>Reporting:  performance reports + Analytics</li>
+                      
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1kbMUjcKpnNXKoZTOMBMSmRBn_WgBbvY30K7-E_MkfdrQzA/viewform?embedded=true" 
+           target="_blank" 
+           class="login-btn" 
+           style="text-decoration: none;">Start hiring now</a>
+            </div>
+            <div class="price-card">
+                <h3>Premium Plan</h3>
+                <div class="price">$900</div>
+                <p><strong>Per month</strong></p>
+                <ul>
+                    <li>Platforms: Up to 3 platforms (TikTok, Pinterest, YouTube, etc.)</li>
+                    <li>Posts: 25 Posts/Month</li>
+                    <li>Content: High-Quality Videos, Infographics, and Carousel Posts</li>
+                    <li>Community Engagement: Daily interactions </li>
+                    <li> Reporting: weekly performance reports + Analytics</li>
+                      
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1kbMUjcKpnNXKoZTOMBMSmRBn_WgBbvY30K7-E_MkfdrQzA/viewform?embedded=true" 
+           target="_blank" 
+           class="login-btn" 
+           style="text-decoration: none;">Start hiring now</a>
+            </div>
+            
+           
+        </div>
+         <!-- 2 pricing cards -->
+         <div class="section-title">
+            <h1>E-mail Marketing</h1>
+        </div>
+        <div class="pricing-grid">
+            
+            <div class="price-card">
+                <h3>Basic plan</h3>
+                <div class="price">$100</div>
+                <p>per month</p>
+                <ul>
+                    <li>Email Campaigns: 1 Email/Month</li>
+                    <li>Content: Custom Email Design + Copywriting</li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU3DmrPC-nwMpIfTh25_qMA7-yJBECQy4mTpQJ_cP-Y-BWJQ/viewform?embedded=true"
+           target="_blank" 
+           class="login-btn" 
+           style="text-decoration: none;">Start hiring now</a>
+            </div>
+            
+            <div class="price-card">
+                <h3>Standard Plan</h3>
+                <div class="price">$200</div>
+                <p>per month</p>
+                <ul>
+                    <li>Email Campaigns: 2 Emails/Month</li>
+                    <li>Content: Custom Email Design + Copywriting</li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU3DmrPC-nwMpIfTh25_qMA7-yJBECQy4mTpQJ_cP-Y-BWJQ/viewform?embedded=true" 
+           target="_blank" 
+           class="login-btn" 
+           style="text-decoration: none;">Start hiring now</a>
+            </div>
+            <div class="price-card">
+                <h3>Premium Plan</h3>
+                <div class="price">$300</div>
+                <p>per month</p>
+                <ul>
+                    <li>Email Campaigns: 4 Emails/Month</li>
+                    <li>Content: Custom Email Design + Copywriting</li>
+                    
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU3DmrPC-nwMpIfTh25_qMA7-yJBECQy4mTpQJ_cP-Y-BWJQ/viewform?embedded=true"
+           target="_blank" 
+           class="login-btn" 
+           style="text-decoration: none;">Start hiring now</a>
+            </div>
+            
+           
+        </div>
+        <!---pricing 3 -->
+        <div class="section-title">
+            <h1>Website Developing</h1>
+        </div>
+        <div class="pricing-grid">
+            
+            <div class="price-card">
+                <h3>Basic Plan</h3>
+                <div class="price">$400</div>
+                <p>per month</p>
+                <ul>
+                    <li><strong>One Page Web Site:</strong> Up to 4 pages</li>
+                    <li><strong>Features:</strong>
+                      <ul>
+                        <li>Responsive Design</li>
+                        <li>Basic Customization</li>
+                        <li>SEO-Friendly Structure</li>
+                      </ul>
+                    </li>
+                    <li><strong>Delivery Time:</strong> 5 Days</li>
+                    <li><strong>Revisions:</strong> 1 Revision</li>
+                    
+                  </ul>
+                  
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKfp5Bt8pM2F9EHbMVq83MSQYUn-RleSp9MmSHJY_aPJlhvQ/viewform?embedded=true" 
+           target="_blank" 
+           class="login-btn" 
+           style="text-decoration: none;">Start hiring now</a>
+            </div>
+            <div class="price-card">
+                <h3>Standard Plan</h3>
+                <div class="price">$600</div>
+                <p>per month</p>
+                <ul>
+                    <li><strong>Number of Pages:</strong> Up to 3 pages</li>
+                    <li><strong>Features:</strong>
+                      <ul>
+                        <li>Responsive Design</li>
+                        <li>Advanced Customization</li>
+                        <li>SEO Optimization</li>
+                        <li>Integration of Contact Forms & Social Media Links</li>
+                      </ul>
+                    </li>
+                    <li><strong>Delivery Time:</strong> 7 Days</li>
+                    <li><strong>Revisions:</strong> 2 Revisions</li>
+                    
+                  </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKfp5Bt8pM2F9EHbMVq83MSQYUn-RleSp9MmSHJY_aPJlhvQ/viewform?embedded=true"
+           target="_blank" 
+           class="login-btn" 
+           style="text-decoration: none;">Start hiring now</a>
+            </div>
+            <div class="price-card">
+                <h3>Premium Plan</h3>
+                <div class="price">$1000</div>
+                <p>per month</p>
+                <ul>
+                    <li><strong>Number of Pages:</strong> Up to 6 pages</li>
+                    <li><strong>Features:</strong>
+                      <ul>
+                        <li>Fully Responsive and Interactive Design</li>
+                        <li>Custom Design Tailored to Your Brand</li>
+                        <li>Advanced SEO Optimization</li>
+                        <li>Integration of Contact Forms & Social Media Links</li>
+                      </ul>
+                    </li>
+                    <li><strong>Delivery Time:</strong> 10 Days</li>
+                    <li><strong>Revisions:</strong> 3 Revisions</li>
+                    <li><strong>Price:</strong> $1,200</li>
+                  </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKfp5Bt8pM2F9EHbMVq83MSQYUn-RleSp9MmSHJY_aPJlhvQ/viewform?embedded=true"
+           target="_blank" 
+           class="login-btn" 
+           style="text-decoration: none;">Start hiring now</a>
+            </div>
+            
+           
+        </div>
+        <!---pricing 4 -->
+        <div class="section-title">
+            <h1>Add-on Service</h1>
+        </div>
+        <div class="pricing-grid">
+            
+            <div class="price-card">
+                
+                <p><Strong>Per month</Strong></p>
+                <ul>
+                    <li>Social media post design<strong>10 Post </strong>80$</li>
+                    <li>Social media Vedio add (non paid) design <strong>3 Vedios </strong>100$</li>
+                    <li>Website Maintain <strong>1 Website </strong>80$</li>
+                    <li>Create a Social Media account for you <strong>1 Platform account </strong>80$</li>
+                    
+
+                    
+                    
+                  </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJIw4Ru1_1IxVjzSjCCqmS2C_vt1xMvy6AlMFkKw-8K4hHBg/viewform?embedded=true" 
+           target="_blank" 
+           class="login-btn" 
+           style="text-decoration: none;">Start hiring now</a>
+            </div>
+            
+            
+           
+        </div>
+        
+
+        
+        
+        
+            
+    </section>
+    <!--About-->
+
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>ABOUT US</h2>
+            <p>Get To Know Us Better</p>
+        </div>
+        <div class="logo1">MMA</div>
+        <div class="section body">
+            <p1>Welcome to Max Mart AI, where innovation meets customer experience. As a leading provider of custom AI chatbot creation and digital marketing solutions, we specialize in empowering small 
+                and mid-sized businesses with the tools they need to grow, engage, and succeed in the digital era.</p1>
+            
+            <p2>Our mission is simple: to offer businesses the power of artificial intelligence, creating seamless customer experiences and optimizing marketing strategies with cutting-edge technology. Whether you're looking to enhance your customer service through intelligent chatbots or want to take your marketing efforts
+                 to the next level, we’re here to deliver results-driven solutions tailored to your unique needs.</p2>
+
+                 <h3>What We Do</h3>
+                 <p3>At Max Mart AI, we focus on two core services</p3>
+                 <p4>1. AI Chatbot Creation – We build intelligent, custom chatbots that automate customer interactions, streamline operations, and provide 24/7 support. Our chatbots are designed to understand and 
+                    respond to customer needs in real-time, helping you improve efficiency and customer satisfaction.</p4>
+                 <p5>2. Digital Marketing – Our digital marketing services harness the power of AI to deliver data-driven strategies that boost online visibility, drive engagement, and accelerate business growth. From social media campaigns 
+                    to targeted content marketing, we help businesses connect with their audience in meaningful ways.</p5>
+        </div>
+        <div class="founder-wrapper">
+            <div class="founder-text">
+                <h3>Founder & CEO</h3>
+                <p>Max Mart AI was founded by <a href="https://www.linkedin.com/in/tyson-madhushanka-a899ab267/" target="_blank">Tyson Madhushanka,</a> an entrepreneur with a vision to bring cutting-edge AI technology to businesses of all sizes. With a deep understanding of AI and digital marketing, Tyson and his team are dedicated to pushing the boundaries of what's possible, providing businesses with tools to thrive in an increasingly digital world.</p>
+                <p>Let us help you transform your business with smarter technology and stronger marketing. Join us at Max Mart AI and stay ahead of the competition.</p>
+            </div>
+            <div class="founder-image">
+                <img src="image/Desktop - 6 (1) 1.jpg" alt="Founder">
+            </div>
+        <!-- About content -->
+    </section>
+
+    <section class="contact" id="contact">
+    <div class="section-title">
+        <h2>CONTACT US</h2>
+        <p>Get In Touch With Us</p>
+    </div>
+    <div class="contact-form">
+        <div class="google-form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVNvSo2Ufgpj3579VjFaAuiEv2Zt66m2mo_vFqxKQZVeGUyw/viewform?embedded=true" width="640" height="959" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                
+            </iframe>
+        </div>
+        
+    </div>
+    <div class="contact-info-container">
+        <div class="contact-items">
+            <div class="contact-items">
+                <!-- WhatsApp Contact -->
+                <div class="contact-item whatsapp-item">
+                    <div class="icon-box">
+                        <img src="image/Group 67.jpg" alt="Whatsapp Icon" onclick="window.open('https://wa.me/94770218831?text=Hi%20I%20want%20to%20contact%20you%20for%20more%20details', '_blank')">
+                    </div>
+                    <h3>Whatsapp</h3>
+                    <p>+94770215831</p>
+                </div>
+                
+                <!-- Location Contact -->
+                <div class="contact-item location-item">
+                    <div class="icon-box">
+                        <img src="image/Group 52.jpg" alt="Location Icon">
+                    </div>
+                    <h3>Location</h3>
+                    <p>No.170,Collombo,<br>Sri Lanka</p>
+                </div>
+                
+                <!-- Email Contact -->
+                <div class="contact-item email-item">
+                    <div class="icon-box">
+                        <img src="image/Group 68.jpg" alt="Email Icon" onclick="window.location.href='mailto:thushan931@gmail.com?subject=Hello%20Thushan&body=I%20would%20like%20to%20get%20in%20touch'">
+                    </div>
+                    <h3>E-mail</h3>
+                    <p>thushan931<br>@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-info">
+        <!-- Contact information -->
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="social-icons">
+        <a href="https://web.facebook.com/profile.php?id=61560269993859" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" class="social-icon"></a>
+        <a href="https://www.linkedin.com/in/tyson-madhushanka-a899ab267/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="social-icon"></a>
+       <!--  <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" class="social-icon"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="social-icon"></a>-->
+        
+    </div>
+    </div>
+    <div class="copyright">
+        2025 MMD Company, All rights reserved.
+    </div>
+</footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.service-card, .work-card, .price-card').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
